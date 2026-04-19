@@ -56,8 +56,12 @@ Proje **Atomic Design** prensibine göre yapılandırılmıştır:
 ## 📄 Sayfalar
 
 - `/` → Onboarding veya Dashboard yönlendirmesi  
-- `/dashboard` → Tüm projelerin listesi  
-- `/project/:id` → Proje detay ve görev yönetimi  
+- `/dashboard` → Tüm projelerin listesi
+- <img width="1919" height="929" alt="image" src="https://github.com/user-attachments/assets/ff4c5cfa-1205-45cc-8301-635d9dd2bb30" />
+
+- `/project/:id` → Proje detay ve görev yönetimi
+- <img width="1919" height="929" alt="image" src="https://github.com/user-attachments/assets/a08879d9-389d-4598-bf5a-945be5e09e03" />
+
 
 ---
 
