@@ -1,73 +1,124 @@
-# React + TypeScript + Vite
+# 📋 Project Planner
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Modern, kullanıcı dostu bir proje ve görev yönetim uygulaması.  
+Projelerini oluştur, görevlerini takip et ve ilerlemeni görsel olarak yönet.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Özellikler
 
-## React Compiler
+### 👤 Kullanıcı Onboarding
+- Kullanıcı adı ve emoji avatar seçimi  
+- İlk girişte onboarding akışı  
+- Veriler localStorage’da saklanır  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 📁 Proje Yönetimi
+- Yeni proje oluşturma  
+- Proje düzenleme ve silme  
+- Kategori, açıklama ve son tarih ekleme  
+- Proje bazlı ilerleme takibi (%)  
 
-## Expanding the ESLint configuration
+### ✅ Görev Yönetimi
+- Projelere görev ekleme  
+- Görevleri tamamlandı olarak işaretleme  
+- Görev düzenleme ve silme  
+- Proje ilerleme yüzdesi otomatik hesaplama  
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 📊 İlerleme Takibi
+- Tamamlanan görevlere göre dinamik progress hesaplama  
+- Görsel progress bar ile takip  
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🧠 Kullanılan Teknolojiler
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- React  
+- TypeScript  
+- Vite  
+- Zustand  
+- React Router  
+- Tailwind CSS  
+- ESLint  
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🧱 Mimari Yapı
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Proje **Atomic Design** prensibine göre yapılandırılmıştır:
+
+- Atoms → Button, Input, Checkbox  
+- Molecules → FormField, ProjectCard, TaskItem  
+- Organisms → Navbar, TaskManager, ProjectModal  
+- Templates → Sayfa layoutları  
+
+---
+
+## 📄 Sayfalar
+
+- `/` → Onboarding veya Dashboard yönlendirmesi  
+- `/dashboard` → Tüm projelerin listesi  
+- `/project/:id` → Proje detay ve görev yönetimi  
+
+---
+
+## 💾 State Management
+
+- Zustand ile merkezi state yönetimi  
+- localStorage persist desteği  
+- Otomatik veri senkronizasyonu  
+
+---
+
+## 📈 İlerleme Hesaplama
+
+Tamamlanan görev sayısına göre proje ilerlemesi otomatik olarak hesaplanır.  
+Her görev güncellemesinde progress değeri yeniden oluşturulur.
+
+---
+
+## 🎨 UI / UX
+
+- Tailwind CSS ile modern tasarım  
+- Responsive (mobile-first)  
+- Minimal ve temiz arayüz  
+- Akıcı animasyonlar  
+
+---
+
+## 🛠️ Kurulum
+
+git clone https://github.com/eceiremklc/task-tracker.git  
+cd project-planner  
+npm install  
+npm run dev  
+
+---
+
+## 📦 Scripts
+
+- npm run dev → Development server  
+- npm run build → Production build  
+- npm run preview → Build preview  
+- npm run lint → Lint kontrolü  
+
+---
+
+## 📁 Klasör Yapısı
+
+src/  
+├── components/  
+├── pages/  
+├── router/  
+├── store/  
+├── interfaces/  
+├── templates/  
+├── App.tsx  
+└── main.tsx  
+
+---
+
+
+## 👩‍💻 Geliştirici
+
+Ece İrem Kılıç  
+Frontend Developer
